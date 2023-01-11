@@ -1,0 +1,19 @@
+info:
+    title: Test
+    description: |
+      This is a comment
+paths:
+    /test:
+      get:
+        target:
+          script: hello.py
+          function: test_square
+          package:
+            path: C:/sandbox
+    /hello:
+      get:
+        target:
+          script: hello.py
+          function: hello
+          package:
+            path: C:/sandbox
